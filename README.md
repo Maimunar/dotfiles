@@ -38,8 +38,8 @@
 
 ## Other needed sofware:
 
-`brew install neovim`
-`brew install ripgrep`
-`brew install gitui`
-`brew install tmux`
-setup nvm - https://github.com/nvm-sh/nvm
+- `brew install neovim`
+- `brew install ripgrep`
+- `brew install gitui`
+- `brew install tmux`
+- setup nvm - https://github.com/nvm-sh/nvm
