@@ -1,5 +1,9 @@
 # Full (hopefully) dev config
 
+## Requirements:
+
+- Setup is for a Mac device only - I am currently working on an M1 Macbook Pro.
+
 ## Setup:
 
 1. Download software below
@@ -43,3 +47,7 @@
 - `brew install gitui`
 - `brew install tmux`
 - setup nvm - https://github.com/nvm-sh/nvm
+
+## Note:
+
+This setup is probably not my complete setup - I will add extra information when I find it while changing devices
