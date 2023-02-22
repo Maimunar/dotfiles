@@ -50,6 +50,28 @@
 - `brew install tmux`
 - setup nvm - https://github.com/nvm-sh/nvm
 
+## RayCast Window management - My own keybinds
+
+Bottom Half - ctrl + opt + down arrow
+Bottom Left Quarter - ctrl + opt + J
+Bottom Right Quarter - ctrl + opt + K
+Center - ctrl + opt + C
+Center Third - ctrl + opt + F
+First Third - ctrl + opt + D
+First Two Thirds - ctrl + opt + E
+Last Third - ctrl + opt + G
+Last Two Thirds - ctrl + opt + T
+Left Half - ctrl + opt + left arrow
+Make Larger - ctrl + opt + =
+Make Smaller - ctrl + opt + -
+Maximize - ctrl + opt + enter
+Next Display - cmd + ctrl + opt + right arrow
+Previous Display - cmd + ctrl + opt + left arrow
+Right Half - ctrl + opt + right arrow
+Top Half - ctrl + opt + up arrow
+Top Left Quarter - ctrl + opt + U
+Top Right Quarter - ctrl + opt + I
+
 ## Note:
 
 This setup is probably not my complete setup - I will add extra information when I find it while changing devices
