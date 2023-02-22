@@ -7,20 +7,22 @@
 ## Setup:
 
 1. Download software below
-2. Change mac options below
-3. Change software options below
-4. Setup iTerm to look and work nice - https://github.com/romkatv/powerlevel10k
-5. setup brew https://brew.sh/
-6. Make sure iTerm autosuggestions and autocomplete work (look in .zshrc in this file)
-7. Install the needed software from below
-8. Setup tmux with the tmux config (.tmux.conf)
-9. Setup nvim with the nvim folder (install plugins and reload)
-10. Setup gitui with the folder in the repo
-11. Download chrome + vimium plugin
+2. RayCast - setup vim keybinds, dark mode, add needed stuff from store, setup rectangle buttons
+3. Change mac options below
+4. Change software options below
+5. Setup iTerm to look and work nice - https://github.com/romkatv/powerlevel10k
+6. setup brew https://brew.sh/
+7. Make sure iTerm autosuggestions and autocomplete work (look in .zshrc in this file)
+8. Install the needed software from below
+9. Setup tmux with the tmux config (.tmux.conf)
+10. Setup nvim with the nvim folder (install plugins and reload)
+11. Setup gitui with the folder in the repo
+12. Download chrome + vimium plugin
 
 ## Software:
 
 - iTerm - https://iterm2.com/
+- RayCast - https://www.raycast.com/
 - Rectangle - https://rectangleapp.com/
 - AltTab - https://alt-tab-macos.netlify.app/
 - Alfred - https://www.alfredapp.com/
