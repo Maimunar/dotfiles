@@ -11,13 +11,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy").setup({ 
-  { import = "maimunar.plugins" }, 
-  { import = "maimunar.plugins.lsp" } }, 
-  {
-  install = {
-    colorscheme = { "horizon" },
-  },
+require("lazy").setup({
+  { import = "maimunar.plugins" },
+  { import = "maimunar.plugins.lsp" },
+}, {
   checker = {
     enabled = true,
     notify = false,
