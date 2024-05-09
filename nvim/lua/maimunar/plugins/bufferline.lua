@@ -2,18 +2,50 @@ return {
   "akinsho/bufferline.nvim",
   dependencies = { "nvim-tree/nvim-web-devicons" },
   version = "*",
-  config = function()
-    local bufferline = require("bufferline")
+  event = "VeryLazy",
 
-    bufferline.setup({
-    options = {
-      separator_style = "slant",
-    },
-  })
-  local keymap = vim.keymap
+  opts = function()
+    local colors = {
+      fg = "#a9b1d6",
+      bg = "#292e42",
+    }
 
-  keymap.set("n", "<TAB>", "<CMD>BufferLineCycleNext<CR>", {desc = "Cycle to next buffer"})
-  keymap.set("n", "<s-TAB>", "<CMD>BufferLineCyclePrev<CR>", {desc = "Cycle to next buffer"})
-  keymap.set("n", "<leader>x", "<CMD>bp<bar>sp<bar>bn<bar>bd<CR>", {desc = "Close current buffer"})
-  end
+    -- local colors = require("colors.tokyodark-terminal")
+    -- vim.api.nvim_set_hl(0, "MyBufferSelected", { fg = colors.fg, bg = colors.bg })
+    vim.api.nvim_set_hl(0, "MyHarpoonSelected", { fg = colors.fg, bg = colors.bg })
+    return {
+      options = {
+        mode = "tabs",
+        custom_areas = {
+          left = function()
+            local result = {}
+            local items = require("harpoon"):list().items
+            for i = 1, #items do
+              local fn = items[i].value
+              local fullpath = vim.fn.fnamemodify(fn, ":p")
+              local name = " " .. i .. " " .. vim.fn.fnamemodify(fn, ":t") .. " "
+              if fullpath == vim.fn.expand("%:p") then
+                table.insert(result, { text = "│", link = "BufferLineIndicatorSelected" })
+                table.insert(result, { text = name, link = "MyHarpoonSelected" })
+                -- table.insert(result, { text = activename, link = "BufferLineBufferVisible" })
+                -- table.insert(result, { text = "│", link = "BufferLineIndicatorSelected" })
+              else
+                -- print('inactive: ' .. name)
+                table.insert(result, { text = name, link = "BufferLineBufferVisible" })
+              end
+            end
+            return result
+          end,
+        },
+      },
+    }
+  end,
 }
+-- dependencies = { "nvim-tree/nvim-web-devicons" },
+-- version = "*",
+-- enabled = false,
+-- Buffers setup
+-- local keymap = vim.keymap
+-- keymap.set("n", "<TAB>", "<CMD>BufferLineCycleNext<CR>", { desc = "Cycle to next buffer" })
+-- keymap.set("n", "<s-TAB>", "<CMD>BufferLineCyclePrev<CR>", { desc = "Cycle to next buffer" })
+-- keymap.set("n", "<leader>x", "<CMD>bp<bar>sp<bar>bn<bar>bd<CR>", { desc = "Close current buffer" })

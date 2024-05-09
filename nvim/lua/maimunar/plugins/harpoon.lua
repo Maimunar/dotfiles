@@ -2,6 +2,16 @@ return {
   "ThePrimeagen/harpoon",
   branch = "harpoon2",
   dependencies = { "nvim-lua/plenary.nvim", "nvim-telescope/telescope.nvim" },
+  opts = {
+    -- global_settings = {
+    --   tabline = true,
+    --   tabline_prefix = "   ",
+    --   tabline_suffix = "   ",
+    -- },
+    menu = {
+      width = vim.api.nvim_win_get_width(0) - 10,
+    },
+  },
   config = function()
     local harpoon = require("harpoon")
     harpoon.setup({})
@@ -29,31 +39,28 @@ return {
     local keymap = vim.keymap
 
     keymap.set("n", "<leader>a", function()
-      harpoon:list():append()
+      harpoon:list():add()
     end)
 
     keymap.set("n", "<leader>m", function()
       harpoon.ui:toggle_quick_menu(harpoon:list())
     end)
 
-    keymap.set("n", "<leader>1", function()
-      harpoon:list():select(1)
+    keymap.set("n", "<leader>ra", function()
+      harpoon:list():clear()
+    end, { desc = "Clear harpoon marks" })
+
+    keymap.set("n", "<leader>rr", function()
+      harpoon:list():remove()
     end)
-    keymap.set("n", "<leader>2", function()
-      harpoon:list():select(2)
-    end)
-    keymap.set("n", "<leader>3", function()
-      harpoon:list():select(3)
-    end)
-    keymap.set("n", "<leader>4", function()
-      harpoon:list():select(4)
-    end)
-    keymap.set("n", "<leader>5", function()
-      harpoon:list():select(5)
-    end)
-    keymap.set("n", "<leader>6", function()
-      harpoon:list():select(6)
-    end)
+
+    local HARPOON_BUFFERS = 9
+
+    for i = 1, HARPOON_BUFFERS do
+      keymap.set("n", "<leader>" .. i, function()
+        harpoon:list():select(i)
+      end)
+    end
 
     -- Toggle previous & next buffers stored within Harpoon list
     keymap.set("n", "<leader>p", function()
