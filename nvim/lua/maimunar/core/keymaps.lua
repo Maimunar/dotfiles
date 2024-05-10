@@ -42,3 +42,26 @@ keymap.set("n", "L", "g_", { desc = "Go to end of line" })
 keymap.set("v", "<leader>s", ":sort<CR>", { desc = "Sort Selected Text" })
 keymap.set("v", "J", "5j", { desc = "Go 5 lines down" })
 keymap.set("v", "K", "5k", { desc = "Gi 5 lines up" })
+
+-- Quickfix shortcuts
+keymap.set("n", "<leader>qo", "<CMD>copen<CR>", { desc = "Open Quickfix List" })
+keymap.set("n", "<leader>qq", "<CMD>cclose<CR>", { desc = "Close Quickfix List" })
+keymap.set("n", "<leader>qn", "<CMD>cnext<CR>", { desc = "Go to Next Quickfix Item" })
+keymap.set("n", "<leader>qp", "<CMD>cprevious<CR>", { desc = "Go To Previous Quickfix Item" })
+
+-- Movement to specific places
+-- Items
+keymap.set("n", "[a", "<CMD>previous<CR>", { desc = "Go to previous" })
+keymap.set("n", "]a", "<CMD>next<CR>", { desc = "Go to next" })
+keymap.set("n", "[A", "<CMD>first<CR>", { desc = "Go to first" })
+keymap.set("n", "]A", "<CMD>last<CR>", { desc = "Go to last" })
+-- Quickfix
+keymap.set("n", "[q", "<CMD>cprevious<CR>", { desc = "Go to previous quickfix item" })
+keymap.set("n", "]q", "<CMD>cnext<CR>", { desc = "Go to next quickfix item" })
+keymap.set("n", "[Q", "<CMD>cfirst<CR>", { desc = "Go to first quickfix item" })
+keymap.set("n", "]Q", "<CMD>clast<CR>", { desc = "Go to last quickfix item" })
+-- Tabs
+keymap.set("n", "[t", "<CMD>tprevious<CR>", { desc = "Go to previous tab" })
+keymap.set("n", "]t", "<CMD>tnext<CR>", { desc = "Go to next tab" })
+keymap.set("n", "[T", "<CMD>tfirst<CR>", { desc = "Go to first tab" })
+keymap.set("n", "]T", "<CMD>tlast<CR>", { desc = "Go to last tab" })
