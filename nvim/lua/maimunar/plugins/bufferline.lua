@@ -6,7 +6,7 @@ return {
 
   opts = function()
     local colors = {
-      fg = "#a9b1d6",
+      fg = "#c0caf5",
       bg = "#292e42",
     }
 
