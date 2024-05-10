@@ -14,7 +14,7 @@ return {
   },
   config = function()
     local harpoon = require("harpoon")
-    local tab_ui = require("bufferline.ui")
+    local ui = require("bufferline.ui")
     harpoon.setup({})
 
     -- basic telescope configuration
@@ -41,7 +41,7 @@ return {
 
     keymap.set("n", "<leader>a", function()
       harpoon:list():add()
-      tab_ui.refresh()
+      ui.refresh()
     end)
 
     keymap.set("n", "<leader>m", function()
@@ -50,12 +50,12 @@ return {
 
     keymap.set("n", "<leader>ra", function()
       harpoon:list():clear()
-      tab_ui.refresh()
+      ui.refresh()
     end, { desc = "Clear harpoon marks" })
 
     keymap.set("n", "<leader>rr", function()
       harpoon:list():remove()
-      tab_ui.refresh()
+      ui.refresh()
     end)
 
     local HARPOON_BUFFERS = 9
