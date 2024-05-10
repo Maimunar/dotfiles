@@ -1,1 +1,0 @@
-- Add raycast custom plugin for obsidian daily note
