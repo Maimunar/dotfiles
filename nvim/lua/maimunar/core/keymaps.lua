@@ -65,3 +65,5 @@ keymap.set("n", "[t", "<CMD>tprevious<CR>", { desc = "Go to previous tab" })
 keymap.set("n", "]t", "<CMD>tnext<CR>", { desc = "Go to next tab" })
 keymap.set("n", "[T", "<CMD>tfirst<CR>", { desc = "Go to first tab" })
 keymap.set("n", "]T", "<CMD>tlast<CR>", { desc = "Go to last tab" })
+
+keymap.set("n", "<leader>bq", "<CMD>bufdo bwipeout<CR>", { desc = "Close all buffers" })
