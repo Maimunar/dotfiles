@@ -1,5 +1,7 @@
 # Full (hopefully) dev config
 
+![image](https://github.com/Maimunar/dev-env/assets/62520195/3cff3f57-4d52-40d8-a9ef-5e7c4334fc51)
+
 ## Requirements:
 
 - Setup is for a Mac device only - I am currently working on an M1 Macbook Pro.
