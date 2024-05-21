@@ -1,0 +1,13 @@
+#yzi.toml
+[manager]
+show_hidden = true
+
+[opener]
+pdf = [
+	{ run = 'sioyek "$@"', desc = "Open PDF with sioyek" },
+]
+
+[open]
+rules = [
+  { name = "*.pdf", use = "pdf"},
+]
