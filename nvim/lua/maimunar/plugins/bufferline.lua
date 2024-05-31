@@ -8,10 +8,10 @@ return {
     local colors = {
       fg = "#c0caf5",
       bg = "#292e42",
+      fillbg = "#1a1b26",
     }
 
-    -- local colors = require("colors.tokyodark-terminal")
-    -- vim.api.nvim_set_hl(0, "MyBufferSelected", { fg = colors.fg, bg = colors.bg })
+    vim.api.nvim_set_hl(0, "BufferLineFill", { bg = colors.fillbg })
     vim.api.nvim_set_hl(0, "MyHarpoonSelected", { fg = colors.fg, bg = colors.bg })
     return {
       options = {
@@ -41,9 +41,6 @@ return {
     }
   end,
 }
--- dependencies = { "nvim-tree/nvim-web-devicons" },
--- version = "*",
--- enabled = false,
 -- Buffers setup
 -- local keymap = vim.keymap
 -- keymap.set("n", "<TAB>", "<CMD>BufferLineCycleNext<CR>", { desc = "Cycle to next buffer" })
