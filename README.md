@@ -8,6 +8,9 @@
 
 ## Software:
 
+I used to use iTerm2, but lately I moved to Alacritty in effort of moving towards an os-agnostic setup. I also did not utilize much of the extra features of iTerm2.
+
+- Alacritty - https://alacritty.org/
 - iTerm - https://iterm2.com/
 - RayCast - https://www.raycast.com/
 - AltTab - https://alt-tab-macos.netlify.app/
@@ -35,6 +38,7 @@
 - `brew install yazi`
 - `brew install gitui`
 - `brew install sketchybar`
+- `brew install --cask alacritty`
 
 ## RayCast:
 
