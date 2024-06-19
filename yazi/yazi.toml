@@ -6,8 +6,13 @@ show_hidden = true
 pdf = [
 	{ run = 'sioyek "$@"', desc = "Open PDF with sioyek" },
 ]
+unzip = [
+  { run = 'unar "$@"', desc = "Extract RAR with unar" },
+]
 
 [open]
 rules = [
   { name = "*.pdf", use = "pdf"},
+  { name = "*.rar", use = "unzip"},
+  { name = "*.zip", use = "unzip"},
 ]
