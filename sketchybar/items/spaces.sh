@@ -17,7 +17,9 @@ sketchybar --add item space_separator left                             \
            --set space_separator icon="􀆊"                                \
                                  icon.color=$ACCENT_COLOR \
                                  icon.padding_left=4                   \
+                                 icon.padding_right=12                  \
                                  label.drawing=off                     \
+                                 label.padding_right=10                \
                                  background.drawing=off                \
                                  script="$PLUGIN_DIR/space_windows.sh" \
            --subscribe space_separator space_windows_change                           
