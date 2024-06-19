@@ -27,4 +27,4 @@ yabai -m rule --add app="^Karabiner-Elements$" manage=off
 yabai -m rule --add app="^QuickTime Player$" manage=off
 yabai -m rule --add app="^Microsoft Teams$" manage=off
 
-yabai -m config external_bar all:28:0
+yabai -m config external_bar all:24:0
