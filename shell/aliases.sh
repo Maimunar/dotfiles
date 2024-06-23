@@ -1,5 +1,6 @@
 alias ls="eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 alias cd="z" # Zoxide
+alias cat="bat"
 alias v="nvim"
 alias t="tmux"
 alias ta="tmux attach"

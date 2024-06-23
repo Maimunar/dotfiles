@@ -4,7 +4,7 @@ if [[ -f "/opt/homebrew/bin/brew" ]] then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 # ---- Bat ----
-export BAT_THEME="TwoDark"
+export BAT_THEME="tokyonight_night"
 
 # ---- Zoxide (better cd) ----
 eval "$(zoxide init zsh)"
