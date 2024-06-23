@@ -1,4 +1,2 @@
-- Add Oil
-- Add commands in a pop up window instead of bottom left corner (probably with dressing)
-- Fix trouble
 - Set up debugging with dap eventually
+- Consider dropping nvim-tree if oil is good enough
