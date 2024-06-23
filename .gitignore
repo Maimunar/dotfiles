@@ -17,6 +17,7 @@
 !wezterm
 !brew
 !.gitignore
+!bat
 
 
 alacritty/themes
