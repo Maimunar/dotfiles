@@ -1,0 +1,6 @@
+- Add Oil
+- Remove dap or set it up correctly
+- Add commands in a pop up window instead of bottom left corner (probably with dressing)
+- Remove rust-tools
+- Fix trouble
+- Remove auto-session
