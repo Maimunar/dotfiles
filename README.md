@@ -38,7 +38,7 @@ I used to use iTerm2, but lately I moved to Alacritty in effort of moving toward
 - `brew install yazi`
 - `brew install gitui`
 - `brew install sketchybar`
-- `brew install --cask alacritty`
+- `brew install --cask alacritty` OR `brew install --cask wezterm` (my choice)
 
 ## RayCast:
 
