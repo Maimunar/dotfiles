@@ -103,7 +103,9 @@ I used to use iTerm2, but lately I moved to Alacritty in effort of moving toward
 - If any quirks are found, they will be added here
 - I am adding custom scripts for raycast, they are in the scripts directory
 
-## Note:
+## Future Plans:
 
-This setup is probably not my complete setup - I will add extra information when I find it while changing devices
-My next plan is to set up a Mozilla browser and Obsidian
+- The neovim config is always changing, I don't see that stopping anytime soon
+- I am looking into setting up a better way to manage my dotfiles - I am considering stow, but need to spend the time configuring it
+- I am looking into setting up a better way to manage my downloaded software - I am considering switching from homebrew and into nix in order to have a more reproducible setup
+- I have started playing with an archlinux setup in my offtime, so more and more effort is put into making my setup os-agnostic, but don't count on that happening anytime soon
