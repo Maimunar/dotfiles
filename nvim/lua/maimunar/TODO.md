@@ -4,3 +4,4 @@
 - Remove rust-tools
 - Fix trouble
 - Remove auto-session
+- Figure obsidian out - I probably dont need the plugin
