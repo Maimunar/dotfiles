@@ -1,0 +1,11 @@
+alacritty
+beardedspice
+font-meslo-lg-nerd-font
+font-monaspace-nerd-font
+font-noto-sans
+font-sf-pro
+font-symbols-only-nerd-font
+google-cloud-sdk
+sf-symbols
+sioyek
+wezterm

@@ -8,7 +8,7 @@
 
 ## Software:
 
-I used to use iTerm2, but lately I moved to Alacritty in effort of moving towards an os-agnostic setup. I also did not utilize much of the extra features of iTerm2.
+I used to use iTerm2, but lately I moved to Wezterm in effort of moving towards an os-agnostic setup. I also did not utilize much of the extra features of iTerm2.
 
 - Alacritty - https://alacritty.org/
 - iTerm - https://iterm2.com/
@@ -22,23 +22,13 @@ I used to use iTerm2, but lately I moved to Alacritty in effort of moving toward
 
 ## Other needed sofware:
 
-- `brew install neovim`
-- `brew install ripgrep`
-- `brew install gitui`
-- `brew install tmux`
+- You can install them with `xargs brew install < leaves.txt` but you probably want to filter that list first
+- You can do the same with `brew/cask.txt` for casks
+- There is some redundancy in my brew list, which I will eventually clean up
 - Tmux Package Manager - `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 - setup nvm - https://github.com/nvm-sh/nvm
 - skhd
 - yabai
-- `brew install btop`
-- `brew install exa`
-- `brew install bat`
-- `brew install fd`
-- `brew install fzf`
-- `brew install yazi`
-- `brew install gitui`
-- `brew install sketchybar`
-- `brew install --cask alacritty` OR `brew install --cask wezterm` (my choice)
 
 ## RayCast:
 
@@ -107,5 +97,4 @@ I used to use iTerm2, but lately I moved to Alacritty in effort of moving toward
 
 - The neovim config is always changing, I don't see that stopping anytime soon
 - I am looking into setting up a better way to manage my dotfiles - I am considering stow, but need to spend the time configuring it
-- I am looking into setting up a better way to manage my downloaded software - I am considering switching from homebrew and into nix in order to have a more reproducible setup
 - I have started playing with an archlinux setup in my offtime, so more and more effort is put into making my setup os-agnostic, but don't count on that happening anytime soon

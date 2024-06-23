@@ -1,0 +1,38 @@
+bash: Bourne-Again SHell, a UNIX command interpreter
+bat: Clone of cat(1) with syntax highlighting and Git integration
+bc: Arbitrary precision numeric processing language
+btop: Resource monitor. C++ version and continuation of bashtop and bpytop
+cbmc: C Bounded Model Checker
+coreutils: GNU File, Shell, and Text utilities
+eza: Modern, maintained replacement for ls
+fd: Simple, fast and user-friendly alternative to find
+sketchybar: Custom macOS statusbar with shell plugin, interaction and graph support
+ffmpegthumbnailer: Create thumbnails for your video files
+fzf: Command-line fuzzy finder written in Go
+gawk: GNU awk utility
+git-delta: Syntax-highlighting pager for git and diff output
+gitui: Blazing fast terminal-ui for git written in rust
+gnu-sed: GNU implementation of the famous stream editor
+graphviz: Graph visualization software from AT&T and Bell Labs
+jq: Lightweight and flexible command-line JSON processor
+skhd: Simple hotkey-daemon for macOS.
+yabai: A tiling window manager for macOS based on binary space partitioning.
+libtermkey: Library for processing keyboard entry from the terminal
+lightgbm: Fast, distributed, high performance gradient boosting framework
+llvm: Next-gen compiler infrastructure
+minikube: Run a Kubernetes cluster locally
+mongodb-database-tools: This package contains standard utilities for interacting with MongoDB.
+neovim: Ambitious Vim-fork focused on extensibility and agility
+openjdk@17: Development kit for the Java programming language
+openssl@1.1: Cryptography and SSL/TLS Toolkit
+poppler: PDF rendering library (based on the xpdf-3.0 code base)
+python@3.11: Interpreted, interactive, object-oriented programming language
+rbenv: Ruby version manager
+redis: Persistent key-value database, with built-in net interface
+ripgrep: Search tool like grep and The Silver Searcher
+spicetify-cli: Command-line tool to customize Spotify client
+tlrc: Official tldr client written in Rust
+tmux: Terminal multiplexer
+unar: Command-line unarchiving tools supporting multiple formats
+yazi: Blazing fast terminal file manager written in Rust, based on async I/O
+zoxide: Shell extension to navigate your filesystem faster
