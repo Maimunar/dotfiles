@@ -1,5 +1,5 @@
-alacritty: (Alacritty) GPU-accelerated terminal emulator
 beardedspice: (BeardedSpice) [no description]
+font-fira-code: (Fira Code) [no description]
 font-meslo-lg-nerd-font: (MesloLG Nerd Font families (Meslo LG)) [no description]
 font-monaspace-nerd-font: (Monaspice Nerd Font families (Monaspace)) [no description]
 font-noto-sans: (Noto Sans) [no description]

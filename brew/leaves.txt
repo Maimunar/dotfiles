@@ -17,7 +17,6 @@ graphviz
 jq
 koekeishiya/formulae/skhd
 koekeishiya/formulae/yabai
-libtermkey
 lightgbm
 llvm
 minikube

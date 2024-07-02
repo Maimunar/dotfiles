@@ -17,7 +17,6 @@ graphviz: Graph visualization software from AT&T and Bell Labs
 jq: Lightweight and flexible command-line JSON processor
 skhd: Simple hotkey-daemon for macOS.
 yabai: A tiling window manager for macOS based on binary space partitioning.
-libtermkey: Library for processing keyboard entry from the terminal
 lightgbm: Fast, distributed, high performance gradient boosting framework
 llvm: Next-gen compiler infrastructure
 minikube: Run a Kubernetes cluster locally
