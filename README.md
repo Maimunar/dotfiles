@@ -10,7 +10,6 @@
 
 I used to use iTerm2, but lately I moved to Wezterm in effort of moving towards an os-agnostic setup. I also did not utilize much of the extra features of iTerm2.
 
-- Alacritty - https://alacritty.org/
 - iTerm - https://iterm2.com/
 - RayCast - https://www.raycast.com/
 - AltTab - https://alt-tab-macos.netlify.app/
@@ -96,5 +95,6 @@ I used to use iTerm2, but lately I moved to Wezterm in effort of moving towards 
 ## Future Plans:
 
 - The neovim config is always changing, I don't see that stopping anytime soon
+- I use obsidian for note-taking, but still havent done a proper setup for nvim complementing it
 - I am looking into setting up a better way to manage my dotfiles - I am considering stow, but need to spend the time configuring it
-- I have started playing with an archlinux setup in my offtime, so more and more effort is put into making my setup os-agnostic, but don't count on that happening anytime soon
+- I have started playing with an archlinux setup in my offtime, so more and more effort is put into making my setup os-agnostic
