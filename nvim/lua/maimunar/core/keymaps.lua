@@ -9,6 +9,10 @@ local keymap = vim.keymap
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
 
+-- center screen on moving larger amounts of lines
+keymap.set("n", "<C-d>", "<C-d>zz", { desc = "Move down and center screen" })
+keymap.set("n", "<C-u>", "<C-u>zz", { desc = "Move up and center screen" })
+
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
