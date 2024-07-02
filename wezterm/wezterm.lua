@@ -2,8 +2,8 @@ local wezterm = require("wezterm")
 
 local config = wezterm.config_builder()
 
+config.front_end = "WebGpu"
 config.color_scheme = "tokyonight_night"
-
 config.font = wezterm.font("MesloLGS Nerd Font Mono")
 config.font_size = 12
 
