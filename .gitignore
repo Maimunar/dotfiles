@@ -18,7 +18,7 @@
 !.gitignore
 !bat
 !piantor1.0.vil
-
+!layout.jpg
 
 alacritty/themes
 tmux/plugins
