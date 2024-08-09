@@ -8,7 +8,7 @@ config.font = wezterm.font_with_fallback({
 	"Fira Code",
 	"MesloLGS Nerd Font Mono",
 })
-config.font_size = 13
+config.font_size = 14
 
 config.enable_tab_bar = false
 config.window_padding = {
