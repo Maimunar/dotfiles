@@ -22,5 +22,8 @@ source $HOME/.config/shell/completionStyling.sh
 
 bindkey -v
 
-export PATH=$PATH:/Users/aleksandarivanov/.spicetify
+export ATAC_KEY_BINDINGS=~/.config/atac/keybindings.toml
 
+# export PATH=$PATH:/usr/local/go/bin
+export PATH="$PATH:$(go env GOPATH)/bin"
+export PATH=$PATH:/Users/aleksandarivanov/.spicetify
