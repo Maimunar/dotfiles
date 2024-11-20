@@ -6,7 +6,6 @@ cbmc
 coreutils
 eza
 fd
-felixkratz/formulae/sketchybar
 ffmpegthumbnailer
 fzf
 gawk
@@ -15,8 +14,7 @@ gitui
 gnu-sed
 graphviz
 jq
-koekeishiya/formulae/skhd
-koekeishiya/formulae/yabai
+julien-cpsn/atac/atac
 lightgbm
 llvm
 minikube
@@ -25,7 +23,7 @@ neovim
 openjdk@17
 openssl@1.1
 poppler
-python@3.11
+portal
 rbenv
 redis
 ripgrep

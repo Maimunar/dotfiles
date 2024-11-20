@@ -26,8 +26,7 @@ I used to use iTerm2, but lately I moved to Wezterm in effort of moving towards 
 - There is some redundancy in my brew list, which I will eventually clean up
 - Tmux Package Manager - `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 - setup nvm - https://github.com/nvm-sh/nvm
-- skhd
-- yabai
+- aerospace
 
 ## RayCast:
 
@@ -37,7 +36,6 @@ I used to use iTerm2, but lately I moved to Wezterm in effort of moving towards 
 ## Mac options:
 
 - Caps Lock to CTRL
-- Option-1,2,3,4,5,6,7,8,9 for changing desktops
 - Hide dock + menu bar
 - Keyboard key repeat fastest, key delay until repeast shortest
 - Keyboard change input sources to ctrl+option+space
@@ -70,11 +68,6 @@ I used to use iTerm2, but lately I moved to Wezterm in effort of moving towards 
 - If any quirks are found, they will be added here
 - Just use the normal config
 
-## Sketchybar options:
-
-- If any quirks are found, they will be added here
-- config is available here
-
 ## Spotify options:
 
 - I use spicetify - https://spicetify.app/
@@ -92,8 +85,15 @@ I used to use iTerm2, but lately I moved to Wezterm in effort of moving towards 
 - If any quirks are found, they will be added here
 - I am adding custom scripts for raycast, they are in the scripts directory
 
+## Notes:
+
+- There is a setup for yabai + skhd, but I have replaced it with aerospace since aerospace doesnt need any extra permissions and is faster
+- There is a sketchybar setup, but I have dropped it in favor of a better tmux line + mneumonics for the needed spaces in aerospace (opt + T for terminal, etc., check aerospace/aerospace.toml)
+  - If you want to use sketchybar, you will need to add a padding on the top of the page. This can be done from the aerospace config file
+
 ## Future Plans:
 
+- I will be dropping gitui in favor of lazygit, since gitui has some issues with pushing with ssh
 - The neovim config is always changing, I don't see that stopping anytime soon
 - I use obsidian for note-taking, but still havent done a proper setup for nvim complementing it
 - I am looking into setting up a better way to manage my dotfiles - I am considering stow, but need to spend the time configuring it

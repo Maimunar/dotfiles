@@ -1,4 +1,4 @@
-beardedspice: (BeardedSpice) [no description]
+beardedspice: (BeardedSpice) Control web-based media players with media keys
 font-fira-code: (Fira Code) [no description]
 font-meslo-lg-nerd-font: (MesloLG Nerd Font families (Meslo LG)) [no description]
 font-monaspace-nerd-font: (Monaspice Nerd Font families (Monaspace)) [no description]
@@ -6,6 +6,7 @@ font-noto-sans: (Noto Sans) [no description]
 font-sf-pro: (San Francisco Pro, SF Pro) [no description]
 font-symbols-only-nerd-font: (Symbols Nerd Font (Symbols Only)) [no description]
 google-cloud-sdk: (Google Cloud SDK) Set of tools to manage resources and applications hosted on Google Cloud
+aerospace: (AeroSpace) AeroSpace is an i3-like tiling window manager for macOS
 sf-symbols: (SF Symbols) Tool that provides consistent, highly configurable symbols for apps
 sioyek: (Sioyek) PDF viewer designed for reading research papers and technical books
 wezterm: (WezTerm) GPU-accelerated cross-platform terminal emulator and multiplexer

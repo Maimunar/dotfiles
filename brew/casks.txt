@@ -1,3 +1,4 @@
+aerospace
 beardedspice
 font-fira-code
 font-meslo-lg-nerd-font
