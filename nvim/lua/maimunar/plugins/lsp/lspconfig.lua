@@ -75,7 +75,7 @@ return {
     local servers = {
       "html",
       "cssls",
-      "tsserver",
+      "ts_ls",
       "clangd",
       "astro",
       "bashls",

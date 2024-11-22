@@ -25,7 +25,7 @@ return {
       ensure_installed = {
         "astro",
         "bashls",
-        "tsserver",
+        "ts_ls",
         "html",
         "cssls",
         "tailwindcss",
