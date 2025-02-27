@@ -26,12 +26,14 @@ I used to use iTerm2, but lately I moved to Wezterm in effort of moving towards 
 - There is some redundancy in my brew list, which I will eventually clean up
 - Tmux Package Manager - `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
 - setup nvm - https://github.com/nvm-sh/nvm
-- aerospace
 
 ## RayCast:
 
 - Setup vim keybinds, dark mode
 - Store modules I use - Obsidian, Spotify, Toothpick
+- I used to use aerospace, but I have moved to raycast for simplicity - I use its window management features and I use app hotkeys to switch between apps
+- Finally In Keyboard Shortcuts on mac i have set up a cycle between apps to not use cmd-` but rather ctrl-opt-n (mneumonic - next)
+- Make sure to export your raycast info when changing a computer. I have not included it here due to privacy reasons
 
 ## Mac options:
 
@@ -87,7 +89,8 @@ I used to use iTerm2, but lately I moved to Wezterm in effort of moving towards 
 
 ## Notes:
 
-- There is a setup for yabai + skhd, but I have replaced it with aerospace since aerospace doesnt need any extra permissions and is faster
+- There is a setup for yabai + skhd, but I think aerospace is better since aerospace doesnt need any extra permissions and is faster
+- There is also an aersospace setup, but I have moved to raycast for simplicity and because aerospace was a bit too slow for my taste
 - There is a sketchybar setup, but I have dropped it in favor of a better tmux line + mneumonics for the needed spaces in aerospace (opt + T for terminal, etc., check aerospace/aerospace.toml)
   - If you want to use sketchybar, you will need to add a padding on the top of the page. This can be done from the aerospace config file
 
