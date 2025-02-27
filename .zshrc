@@ -19,6 +19,7 @@ source $HOME/.config/shell/fzf.sh
 source $HOME/.config/shell/gcloud.sh
 source $HOME/.config/shell/aliases.sh
 source $HOME/.config/shell/completionStyling.sh
+source $HOME/.config/shell/pnpm.sh
 
 bindkey -v
 
@@ -27,3 +28,4 @@ export ATAC_KEY_BINDINGS=~/.config/atac/keybindings.toml
 # export PATH=$PATH:/usr/local/go/bin
 export PATH="$PATH:$(go env GOPATH)/bin"
 export PATH=$PATH:/Users/aleksandarivanov/.spicetify
+
