@@ -16,6 +16,7 @@ source $HOME/.config/shell/zinit.sh
 source $HOME/.config/shell/nvm.sh
 source $HOME/.config/shell/history.sh
 source $HOME/.config/shell/fzf.sh
+source $HOME/.config/shell/yazi.sh
 source $HOME/.config/shell/gcloud.sh
 source $HOME/.config/shell/aliases.sh
 source $HOME/.config/shell/completionStyling.sh
