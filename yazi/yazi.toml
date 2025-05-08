@@ -2,6 +2,16 @@
 [manager]
 show_hidden = true
 
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*"
+run  = "git"
+
+[[plugin.prepend_fetchers]]
+id   = "git"
+name = "*/"
+run  = "git"
+
 [opener]
 pdf = [
 	{ run = 'sioyek "$@"', desc = "Open PDF with sioyek" },
@@ -9,10 +19,20 @@ pdf = [
 unzip = [
   { run = 'unar "$@"', desc = "Extract RAR with unar" },
 ]
+edit = [
+	{ run = 'nvim "$@"', block = true, for = "unix" },
+]
+pic = [
+  { run = 'open -a Preview "$@"', desc = "Open with Preview" },
+]
 
 [open]
 rules = [
   { name = "*.pdf", use = "pdf"},
   { name = "*.rar", use = "unzip"},
   { name = "*.zip", use = "unzip"},
+  { name = "*.jpg", use = "pic"},
+  { name = "*.png", use = "pic"},
+  { name = "*.jpeg", use = "pic"},
+  { name = "*", use = "edit"},
 ]
