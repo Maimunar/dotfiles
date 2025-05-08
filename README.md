@@ -90,9 +90,9 @@ I used to use iTerm2, but lately I moved to Wezterm in effort of moving towards 
 ## Notes:
 
 - There is a setup for yabai + skhd, but I think aerospace is better since aerospace doesnt need any extra permissions and is faster
-- There is also an aersospace setup, but I have moved to raycast for simplicity and because aerospace was a bit too slow for my taste
-- There is a sketchybar setup, but I have dropped it in favor of a better tmux line + mneumonics for the needed spaces in aerospace (opt + T for terminal, etc., check aerospace/aerospace.toml)
-  - If you want to use sketchybar, you will need to add a padding on the top of the page. This can be done from the aerospace config file
+- I do not utilize the aersospace setup too, since I have moved to raycast for simplicity and because aerospace was a bit too slow for my taste
+- There is a sketchybar setup, but I have dropped it in favor of a better tmux line + mneumonics for the needed spaces in aerospace/raycast (opt + T for terminal, etc., check aerospace/aerospace.toml)
+  - If you want to use sketchybar, you will need to add a padding on the top of the page. This can be done from the aerospace config file or the raycast window management config
 
 ## Future Plans:
 
