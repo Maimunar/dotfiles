@@ -24,6 +24,8 @@ source $HOME/.config/shell/pnpm.sh
 
 bindkey -v
 
+export XDG_CONFIG_HOME="$HOME/.config"
+
 export ATAC_KEY_BINDINGS=~/.config/atac/keybindings.toml
 
 # export PATH=$PATH:/usr/local/go/bin
