@@ -1,6 +1,5 @@
 # TODO
 
-- (IN PROGRESS) move to Lazygit
 - Consider following 4 plugins:
   https://github.com/folke/snacks.nvim
   https://github.com/mikavilpas/yazi.nvim
