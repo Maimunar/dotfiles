@@ -9,12 +9,18 @@ fd: Simple, fast and user-friendly alternative to find
 ffmpegthumbnailer: Create thumbnails for your video files
 fzf: Command-line fuzzy finder written in Go
 gawk: GNU awk utility
+gcc: GNU compiler collection
+ghostscript: Interpreter for PostScript and PDF
 git-delta: Syntax-highlighting pager for git and diff output
 gitui: Blazing fast terminal-ui for git written in rust
 gnu-sed: GNU implementation of the famous stream editor
+go: Open source programming language to build simple/reliable/efficient software
 graphviz: Graph visualization software from AT&T and Bell Labs
+imagemagick: Tools and libraries to manipulate images in many formats
+jpeg: Image manipulation library
 jq: Lightweight and flexible command-line JSON processor
 atac: A simple API client (postman like) in your terminal
+lazygit: Simple terminal UI for git commands
 lightgbm: Fast, distributed, high performance gradient boosting framework
 llvm: Next-gen compiler infrastructure
 minikube: Run a Kubernetes cluster locally
@@ -24,9 +30,12 @@ openjdk@17: Development kit for the Java programming language
 openssl@1.1: Cryptography and SSL/TLS Toolkit
 poppler: PDF rendering library (based on the xpdf-3.0 code base)
 portal: Quick and easy command-line file transfer utility from any computer to another
+postgresql@17: Object-relational database system
+python@3.11: Interpreted, interactive, object-oriented programming language
 rbenv: Ruby version manager
 redis: Persistent key-value database, with built-in net interface
 ripgrep: Search tool like grep and The Silver Searcher
+sevenzip: 7-Zip is a file archiver with a high compression ratio
 spicetify-cli: Command-line tool to customize Spotify client
 tlrc: Official tldr client written in Rust
 tmux: Terminal multiplexer
