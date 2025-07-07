@@ -8,5 +8,4 @@
   https://github.com/mikavilpas/yazi.nvim
   https://github.com/pwntester/octo.nvim
   https://github.com/echasnovski/mini.nvim
-- Run the brew list scripts and add them
 - Update README
