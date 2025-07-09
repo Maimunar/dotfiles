@@ -104,6 +104,7 @@ return {
     end,
     desc = "Goto Implementation",
   },
+  -- Git
   {
     "<leader><leader>gb",
     function()
@@ -118,6 +119,7 @@ return {
     end,
     desc = "Lazygit",
   },
+  -- Extra
   {
     "<leader>nd",
     function()
