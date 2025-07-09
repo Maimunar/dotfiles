@@ -1,0 +1,21 @@
+return {
+  "folke/snacks.nvim",
+  priority = 1000,
+  lazy = false,
+  opts = {
+    bigfile = { enabled = true },
+    dashboard = require("maimunar.plugins.utils.dashboard"),
+    explorer = { enabled = true },
+    git = { enabled = true },
+    image = { enabled = true },
+    indent = { enabled = true, animate = { enabled = false } },
+    input = { enabled = true },
+    lazygit = { enabled = true },
+    notifier = { enabled = true },
+    picker = { enabled = true },
+    quickfile = { enabled = true },
+    words = { enabled = true },
+    zen = { enabled = true },
+  },
+  keys = require("maimunar.plugins.utils.snacks_keybindings"),
+}

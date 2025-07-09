@@ -16,6 +16,10 @@ return {
       todo_comments.jump_prev()
     end, { desc = "Previous todo comment" })
 
+    keymap.set("n", "<leader>ft", function()
+      Snacks.picker.todo_comments()
+    end, { desc = "Find Todo Comments" })
+
     todo_comments.setup()
   end,
 }
