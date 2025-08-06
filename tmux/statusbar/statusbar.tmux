@@ -10,14 +10,18 @@ status_left="#[bg=$bg,fg=$secondary]#{?client_prefix,, #S }#[bg=$secondary,fg=$b
 
 # Right
 status_separator="#[bg=$bg,fg=$secondary]•#[bg=$bg,fg=${primary}]"
-status_time="#[bg=$bg,fg=$secondary]%a %I %H:%M#[bg=$bg,fg=${secondary}]"
+
 cpu=#(~/.config/tmux/statusbar/cpu.sh)
 status_cpu="#[bg=$bg,fg=$secondary]$cpu#[bg=$bg,fg=$secondary]"
+
 battery=#(~/.config/tmux/statusbar/battery.sh)
 status_battery="#[bg=$bg,fg=$secondary]$battery#[bg=$bg,fg=$secondary]"
 
+status_time="#[bg=$bg,fg=$secondary]%a %d %H:%M#[bg=$bg,fg=${secondary}]"
+
 status_right="$status_cpu $status_separator $status_battery $status_separator $status_time"
 
+# Setup
 window_status_format=' #I #W '
 
 separator=' • '
