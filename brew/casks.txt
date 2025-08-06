@@ -5,6 +5,7 @@ font-monaspace-nerd-font
 font-noto-sans
 font-sf-pro
 font-symbols-only-nerd-font
+gcloud-cli
 google-cloud-sdk
 sf-symbols
 sioyek

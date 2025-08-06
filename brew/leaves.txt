@@ -4,12 +4,14 @@ bc
 btop
 cbmc
 coreutils
+crystal
 eza
 fd
 ffmpegthumbnailer
 fzf
 gawk
 gcc
+gh
 ghostscript
 git-delta
 gitui
@@ -22,9 +24,9 @@ jq
 julien-cpsn/atac/atac
 lazygit
 lightgbm
-llvm
 minikube
 mongodb/brew/mongodb-database-tools
+morantron/tmux-fingers/tmux-fingers
 neovim
 openjdk@17
 openssl@1.1
