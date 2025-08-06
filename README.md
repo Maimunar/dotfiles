@@ -66,6 +66,7 @@ This section gives a step-by-step process of setting up my dev environment
 - Vial - for my custom keyboard. Vial files are in the repo for importing
 - More brew software - check the file `leaves.txt` or install all with `xargs brew install < leaves.txt` (not recommended)
 - More brew casks - `cask.txt`
+- Honorable mentions of brew software - atac (alternative to postman), btop (htop alternative), bat (better cat), yazi (file explorer, config can be improved)
 - Fonts - I use Fira Code and MesloLGS Nerd Font Mono
 
 7. Obsidian - note-taking
