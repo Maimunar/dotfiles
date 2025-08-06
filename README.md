@@ -6,98 +6,98 @@
 
 - Setup is for a Mac device only - I am currently working on an M1 Macbook Pro.
 
-## Software:
+## Setup
 
-I used to use iTerm2, but lately I moved to Wezterm in effort of moving towards an os-agnostic setup. I also did not utilize much of the extra features of iTerm2.
+This section gives a step-by-step process of setting up my dev environment
 
-- iTerm - https://iterm2.com/
-- RayCast - https://www.raycast.com/
-- AltTab - https://alt-tab-macos.netlify.app/
-- AlDente - https://apphousekitchen.com/
-- BeardedSpice - I use this to control Spotify with media keys instead of it opening iTunes (annoyingly) - https://beardedspice.github.io/
-- Obsidian - https://obsidian.md/
-- Brew
-- sioyek - PDF reader
-
-## Other needed sofware:
-
-- You can install them with `xargs brew install < leaves.txt` but you probably want to filter that list first
-- You can do the same with `brew/cask.txt` for casks
-- There is some redundancy in my brew list, which I will eventually clean up
-- Tmux Package Manager - `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
-- setup nvm - https://github.com/nvm-sh/nvm
-
-## RayCast:
-
-- Setup vim keybinds, dark mode
-- Store modules I use - Obsidian, Spotify, Toothpick
-- I used to use aerospace, but I have moved to raycast for simplicity - I use its window management features and I use app hotkeys to switch between apps
-- Finally In Keyboard Shortcuts on mac i have set up a cycle between apps to not use cmd-` but rather ctrl-opt-n (mneumonic - next)
-- Make sure to export your raycast info when changing a computer. I have not included it here due to privacy reasons
-
-## Mac options:
+1. System Settings
 
 - Caps Lock to CTRL
 - Hide dock + menu bar
 - Keyboard key repeat fastest, key delay until repeast shortest
 - Keyboard change input sources to ctrl+option+space
 
-## Firefox options:
+2. Browser
 
-- I use a custom user.js - https://github.com/yokoffing/Betterfox
-- I use the Tokyo Night theme
-- some of my plugins - Vimium, uBlock Origin, Password manager
+- Install Zen
+- Cmd-shift-e for compact mode
+- Import bookmarks if needed
+- Setup needed spaces
+- Setup default search engine - `https://unduck-maimunars-projects.vercel.app/`
+- Plugins - Vimium, uBlock Origin, Password manager, Privacy Badger, (optional) React Developer tools
+- Theme - tokyonight
 
-## Software options:
+3. RayCast
 
-- RayCast - open with cmd + space (remove default mac spotlight)
-- AltTab - open with cmd + tab (remove default mac tab windows)
-- iTerm - setup ssh profiles/passwords
-- iTerm - Font DroidSansMono Nerd Font
+- `https://www.raycast.com/`
+- Open with cmd + space (remove mac spotlight)
+- Setup vim keybinds, dark mode
+- Store modules I use - Obsidian, Spotify, (optional) Trello
+- In Keyboard Shortcuts on mac set up cycle between apps to not use cmd-` but rather opt-n (mneumonic - next)
+- Window management shortcuts + notes and todo list (possibly from store) shortcuts
+- I have some scripts in the repo under `scripts/` i use with raycast like the obsidian daily note
 
-## Zsh options:
+- Make sure to export your raycast info when changing a computer. I have not included it here due to privacy reasons
 
-- Powerlevel10k - https://github.com/romkatv/powerlevel10k
-- Maybe moving to zinit soon
-- autosuggestions, autocomplete (in .zshrc)
+4. Homebrew - `https://brew.sh/`
 
-## Tmux options:
+5. Terminal
 
-- After setting up tpm, should work with the config
+- wezterm (current) or ghostty
+- use terminal configuration from the repo + font
+- setup zsh:
+  - p10k (oh-my-zsh): `https://github.com/romkatv/powerlevel10k`
+  - alternatively, you can use zinit for a lighter config
+  - .zshrc - check repo for many features like autosuggestions, autocomplete...
+  - setup ssh profiles/passwords
+- setup nvm - https://github.com/nvm-sh/nvm
 
-## Nvim options:
+6. Software - some of these can be installed with homebrew, which should be the preferred way - double check their installation
 
-- If any quirks are found, they will be added here
-- Just use the normal config
+- AltTab - https://alt-tab-macos.netlify.app/
+  - Make it work with cmd+tab
+  - Blacklist all apps with a raycast shortcut
+- AlDente - https://apphousekitchen.com/
+- BeardedSpice - I use this to control Spotify with media keys instead of it opening iTunes (annoyingly) - https://beardedspice.github.io/
+- Obsidian -
+- sioyek - PDF reader
+- Discord
+- Docker
+- Vial - for my custom keyboard. Vial files are in the repo for importing
+- More brew software - check the file `leaves.txt` or install all with `xargs brew install < leaves.txt` (not recommended)
+- More brew casks - `cask.txt`
+- Fonts - I use Fira Code and MesloLGS Nerd Font Mono
 
-## Spotify options:
+7. Obsidian - note-taking
+
+- `https://obsidian.md/`
+- Tokyo Night theme, vim keybidnings
+- Plugins: Advanced URI, Git (for backup), Excalidraw, Omnisearch, Homepage
+
+8. Code tools
+
+- tmux - use tpm + the config from the repo
+- Tmux Package Manager - `git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm`
+- neovim - config available in repo
+
+9. Spotify
 
 - I use spicetify - https://spicetify.app/
-- Tokyo night theme, browse marketplace for good plugins, but i recommend genres and vim plugin as well as fullscreen
+- Tokyo night theme, browse marketplace for good plugins, but I recommend genres and vim plugin as well as fullscreen
 
-## Obsidian options:
+## Alternatives
 
-- I use the Tokyo Night theme
-- Some of the plugins i use: Advanced URI, Git (for backup), Excalidraw, Omnisearch, Homepage
+These are things I used to use that I have now deleted from my main configuration, however are still things someone could find use in and most configuration stays in this repo.
 
-## Other software options:
-
-- Gitui, Yazi, btop, fzf, sioyek are all set up with tokyonight themes, config is available
-- When applicable, some keybinds are added
-- If any quirks are found, they will be added here
-- I am adding custom scripts for raycast, they are in the scripts directory
-
-## Notes:
-
-- There is a setup for yabai + skhd, but I think aerospace is better since aerospace doesnt need any extra permissions and is faster
-- I do not utilize the aersospace setup too, since I have moved to raycast for simplicity and because aerospace was a bit too slow for my taste
-- There is a sketchybar setup, but I have dropped it in favor of a better tmux line + mneumonics for the needed spaces in aerospace/raycast (opt + T for terminal, etc., check aerospace/aerospace.toml)
-  - If you want to use sketchybar, you will need to add a padding on the top of the page. This can be done from the aerospace config file or the raycast window management config
+1. Firefox - if you dont like zen, you can use firefox with a custom user.js - https://github.com/yokoffing/Betterfox
+2. iTerm - https://iterm2.com/ - I used to use iTerm2, but lately I moved to Wezterm in effort of moving towards an os-agnostic setup. I also did not utilize much of the extra features of iTerm2.
+3. I used to use aerospace, but I have moved to raycast for simplicity and velocity - I use its window management features and I use app hotkeys to switch between apps. Before aerospace, I used yabai + skhd, but if you are interested in a tiling window manager, aerospace is much better, since it doesnt need extra permissions and is slightly faster. All the configurations I used to use are available in the repo
+4. Gitui - I started using lazygit instead of it, config is still available
+5. Sketchybar - I used to use it to showcase my spaces and time, but I dropped it to save screen real estate. Instead I use a better tmux line + mneumonics for the needed spaces (opt+ T = terminal, etc, check `aerospace/aerospace.toml`)
+   - If you are using sketchybar and aerospace/yabai, you need to add a padding on top of the page in yabai/aerospace
 
 ## Future Plans:
 
-- I will be dropping gitui in favor of lazygit, since gitui has some issues with pushing with ssh
-- The neovim config is always changing, I don't see that stopping anytime soon
 - I use obsidian for note-taking, but still havent done a proper setup for nvim complementing it
-- I am looking into setting up a better way to manage my dotfiles - I am considering stow, but need to spend the time configuring it
+- I am looking into setting up a better way to manage my dotfiles - I am considering stow and will probably be implementing this soon
 - I have started playing with an archlinux setup in my offtime, so more and more effort is put into making my setup os-agnostic
