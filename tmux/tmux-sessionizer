@@ -1,6 +1,4 @@
-#!/usr/bin/env bash
-
-# Choose project directory
+hoose project directory
 if [[ $# -eq 1 ]]; then
     selected=$1
 else
@@ -26,14 +24,21 @@ if ! tmux has-session -t "$session_name" 2>/dev/null; then
     tmux new-session -ds "$session_name"
 fi
 
-# Check if the window already exists inside the session
-if ! tmux list-windows -t "$session_name" | grep -q "^$selected_name"; then
-    tmux new-window -t "$session_name" -n "$selected_name" -c "$selected"
+# If window already exists → just select it
+if tmux list-windows -t "$session_name" | awk '{print $2}' | sed 's/:$//' | grep -qx "$selected_name"; then
+    if [[ -z $TMUX ]]; then
+        tmux attach-session -t "$session_name" \; select-window -t "$selected_name"
+    else
+        tmux switch-client -t "$session_name" \; select-window -t "$selected_name"
+    fi
+    exit 0
 fi
 
-# Attach or switch depending on whether we're already inside tmux
+# Otherwise create a new window and switch to it
+tmux new-window -t "$session_name" -n "$selected_name" -c "$selected"
 if [[ -z $TMUX ]]; then
     tmux attach-session -t "$session_name" \; select-window -t "$selected_name"
 else
     tmux switch-client -t "$session_name" \; select-window -t "$selected_name"
 fi
+
