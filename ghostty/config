@@ -1,0 +1,5 @@
+theme = tokyonight_night
+macos-titlebar-style = hidden
+font-family = Fira Code
+window-padding-x = 5
+window-padding-y = 10,5

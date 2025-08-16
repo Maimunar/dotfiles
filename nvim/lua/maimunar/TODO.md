@@ -1,2 +1,0 @@
-- Set up debugging with dap eventually
-- Consider dropping nvim-tree if oil is good enough

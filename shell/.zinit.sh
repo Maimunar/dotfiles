@@ -22,6 +22,3 @@ zinit snippet OMZP::git
 autoload -Uz compinit && compinit
 
 zinit cdreplay -q
-
-# ---- Bat ----
-export BAT_THEME="tokyonight_night"

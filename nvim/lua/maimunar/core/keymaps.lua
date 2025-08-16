@@ -31,10 +31,6 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" })
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" })
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" })
 
--- line numbers
-keymap.set("n", "<leader>n", "<cmd> set nu! <CR>", { desc = "Toggle line number" })
-keymap.set("n", "<leader>rn", "<cmd> set rnu! <CR>", { desc = "Toggle relative line number" })
-
 -- Movement utility
 keymap.set("n", "<CR>", "o<ESC>", { desc = "Newline in normal mode" })
 keymap.set("n", "J", "5j", { desc = "Go 5 lines down" })

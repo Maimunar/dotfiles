@@ -1,12 +1,3 @@
 beardedspice
-font-fira-code
-font-meslo-lg-nerd-font
-font-monaspace-nerd-font
-font-noto-sans
-font-sf-pro
-font-symbols-only-nerd-font
-gcloud-cli
-google-cloud-sdk
 sf-symbols
 sioyek
-wezterm

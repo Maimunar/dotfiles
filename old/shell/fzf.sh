@@ -40,3 +40,6 @@ _fzf_compgen_path() {
 _fzf_compgen_dir() {
   fd --type=d --hidden --exclude .git . "$1"
 }
+
+# Fzf with git 
+source ~/.config/fzf-git.sh/fzf-git.sh

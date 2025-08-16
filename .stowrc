@@ -1,0 +1,4 @@
+--target=$HOME/.config
+--ignore=old
+--ignore=brew
+--ignore=keyboard

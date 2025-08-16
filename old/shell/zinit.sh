@@ -10,6 +10,9 @@ fi
 # Source/Load zinit
 source "${ZINIT_HOME}/zinit.zsh"
 
+# Add in Powerlevel10k
+zinit ice depth=1; zinit light romkatv/powerlevel10k
+
 # Add in zsh plugins
 zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
@@ -23,5 +26,3 @@ autoload -Uz compinit && compinit
 
 zinit cdreplay -q
 
-# ---- Bat ----
-export BAT_THEME="tokyonight_night"
