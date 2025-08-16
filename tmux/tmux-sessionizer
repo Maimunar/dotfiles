@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+# Choose project directory
+if [[ $# -eq 1 ]]; then
+    selected=$1
+else
+    selected=$(find ~/dev ~/sa -mindepth 1 -maxdepth 1 -type d | fzf)
+fi
+
+if [[ -z $selected ]]; then
+    exit 0
+fi
+
+selected_name=$(basename "$selected" | tr . _)
+session_name="projects"   # fixed session to hold all windows
+tmux_running=$(pgrep tmux)
+
+# If tmux isn't running at all, start a session with first window
+if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
+    tmux new-session -s "$session_name" -n "$selected_name" -c "$selected"
+    exit 0
+fi
+
+# Make sure the main session exists
+if ! tmux has-session -t "$session_name" 2>/dev/null; then
+    tmux new-session -ds "$session_name"
+fi
+
+# Check if the window already exists inside the session
+if ! tmux list-windows -t "$session_name" | grep -q "^$selected_name"; then
+    tmux new-window -t "$session_name" -n "$selected_name" -c "$selected"
+fi
+
+# Attach or switch depending on whether we're already inside tmux
+if [[ -z $TMUX ]]; then
+    tmux attach-session -t "$session_name" \; select-window -t "$selected_name"
+else
+    tmux switch-client -t "$session_name" \; select-window -t "$selected_name"
+fi

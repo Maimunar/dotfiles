@@ -28,5 +28,7 @@ export ATAC_THEME="$XDG_CONFIG_HOME/atac/tokyonight.toml"
 
 eval "$(oh-my-posh init zsh --config $XDG_CONFIG_HOME/oh-my-posh/zen.toml)"
 
-
 export PATH=$PATH:/Users/aivanov/.spicetify
+export PATH=$PATH:"$HOME/.local/scripts/"
+
+bindkey -s ^f "tmux-sessionizer\n"
