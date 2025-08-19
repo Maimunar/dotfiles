@@ -2,16 +2,6 @@
 [mgr]
 show_hidden = true
 
-[[plugin.prepend_fetchers]]
-id   = "git"
-name = "*"
-run  = "git"
-
-[[plugin.prepend_fetchers]]
-id   = "git"
-name = "*/"
-run  = "git"
-
 [opener]
 pdf = [
 	{ run = 'sioyek "$@"', desc = "Open PDF with sioyek" },
