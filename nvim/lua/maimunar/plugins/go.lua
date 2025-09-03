@@ -21,6 +21,8 @@ return {
 			group = format_sync_grp,
 		})
 		-- keymaps
+		local keymap = vim.keymap
+
 		keymap.set("n", "<leader>gb", "<CMD>GoBuild<CR>", { desc = "Go build" })
 		keymap.set("n", "<leader>gd", "<CMD>GoDebug<CR>", { desc = "Go debug" })
 		keymap.set("n", "<leader>gat", "<CMD>GoAddTest<CR>", { desc = "Go add test for current function" })

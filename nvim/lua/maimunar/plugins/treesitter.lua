@@ -43,6 +43,8 @@ return {
         "query",
         "vimdoc",
         "c",
+        "glimmer",
+        "vue",
       },
       incremental_selection = {
         enable = true,
