@@ -56,7 +56,6 @@ return {
 		local servers = {
 			"html",
 			"cssls",
-			"ts_ls",
 			"clangd",
 			"astro",
 			"bashls",
@@ -65,19 +64,20 @@ return {
 			"prismals",
 			"sqlls",
 			"pyright",
-			"vuels",
 			"ember",
 		}
 
+		local generic_config = {
+			on_attach = on_attach,
+			capabilities = capabilities,
+		}
+
 		for _, lsp in ipairs(servers) do
-			lspconfig[lsp].setup({
-				on_attach = on_attach,
-				capabilities = capabilities,
-			})
+			vim.lsp.config(lsp, generic_config)
+			vim.lsp.enable(lsp)
 		end
 
-		-- configure svelte server
-		lspconfig["svelte"].setup({
+		vim.lsp.config("svelte", {
 			capabilities = capabilities,
 			on_attach = function(client, bufnr)
 				on_attach(client, bufnr)
@@ -92,9 +92,58 @@ return {
 				})
 			end,
 		})
+		vim.lsp.enable("svelte")
 
-		-- configure emmet language server
-		lspconfig["emmet_ls"].setup({
+		-- vim.lsp.config("vtsls", {
+		-- 	capabilities = capabilities,
+		-- 	on_attach = on_attach,
+		-- 	filetypes = {
+		-- 		"javascript",
+		-- 		"javascriptreact",
+		-- 		"typescript",
+		-- 		"typescriptreact",
+		-- 	},
+		-- })
+
+		local vue_language_server_path = vim.fn.stdpath("data")
+			.. "/mason/packages/vue-language-server/node_modules/@vue/language-server"
+		local tsserver_filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" }
+		local vue_plugin = {
+			name = "@vue/typescript-plugin",
+			location = vue_language_server_path,
+			languages = { "vue" },
+			configNamespace = "typescript",
+		}
+		local vtsls_config = {
+			settings = {
+				vtsls = {
+					tsserver = {
+						globalPlugins = {
+							vue_plugin,
+						},
+					},
+				},
+			},
+			filetypes = tsserver_filetypes,
+		}
+
+		local vue_ls_config = {}
+		-- nvim 0.11 or above
+		vim.lsp.config("vtsls", vtsls_config)
+		vim.lsp.config("vue_ls", vue_ls_config)
+		vim.lsp.enable({ "vtsls", "vue_ls" }) -- If using `ts_ls` replace `vtsls` to `ts_ls`
+
+		-- vim.lsp.enable("vtsls")
+		--
+		-- vim.lsp.config("vuels", {
+		-- 	capabilities = capabilities,
+		-- 	on_attach = on_attach,
+		-- 	filetypes = { "vue" },
+		-- })
+		--
+		-- vim.lsp.enable("vuels")
+
+		vim.lsp.config("emmet_ls", {
 			capabilities = capabilities,
 			on_attach = on_attach,
 			filetypes = {
@@ -110,9 +159,9 @@ return {
 				"handlebars",
 			},
 		})
+		vim.lsp.enable("emmet_ls")
 
-		-- configure lua server (with special settings)
-		lspconfig["lua_ls"].setup({
+		vim.lsp.config("lua_ls", {
 			capabilities = capabilities,
 			on_attach = on_attach,
 			settings = { -- custom settings for lua
@@ -131,7 +180,9 @@ return {
 				},
 			},
 		})
-		lspconfig.gopls.setup({
+		vim.lsp.enable("lua_ls")
+
+		vim.lsp.config("gopls", {
 			on_attach = on_attach,
 			capabilities = capabilities,
 			cmd = { "gopls" },
@@ -147,5 +198,6 @@ return {
 				},
 			},
 		})
+		vim.lsp.enable("gopls")
 	end,
 }

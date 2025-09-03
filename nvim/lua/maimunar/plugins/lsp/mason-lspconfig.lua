@@ -8,7 +8,6 @@ return {
 		ensure_installed = {
 			"astro",
 			"bashls",
-			"ts_ls",
 			"html",
 			"cssls",
 			"tailwindcss",
@@ -21,7 +20,8 @@ return {
 			"rust_analyzer",
 			"clangd",
 			"zk",
-			"vue_ls",
+			"vuels",
+			"vtsls",
 			"ember",
 		},
 	},
