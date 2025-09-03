@@ -21,6 +21,8 @@ return {
 			"rust_analyzer",
 			"clangd",
 			"zk",
+			"vue_ls",
+			"ember",
 		},
 	},
 }
