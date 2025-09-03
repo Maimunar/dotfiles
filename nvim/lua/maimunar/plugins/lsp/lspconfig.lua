@@ -74,37 +74,11 @@ return {
 
 		for _, lsp in ipairs(servers) do
 			vim.lsp.config(lsp, generic_config)
-			vim.lsp.enable(lsp)
 		end
 
-		vim.lsp.config("svelte", {
-			capabilities = capabilities,
-			on_attach = function(client, bufnr)
-				on_attach(client, bufnr)
+		vim.lsp.enable(servers)
 
-				vim.api.nvim_create_autocmd("BufWritePost", {
-					pattern = { "*.js", "*.ts" },
-					callback = function(ctx)
-						if client.name == "svelte" then
-							client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.file })
-						end
-					end,
-				})
-			end,
-		})
-		vim.lsp.enable("svelte")
-
-		-- vim.lsp.config("vtsls", {
-		-- 	capabilities = capabilities,
-		-- 	on_attach = on_attach,
-		-- 	filetypes = {
-		-- 		"javascript",
-		-- 		"javascriptreact",
-		-- 		"typescript",
-		-- 		"typescriptreact",
-		-- 	},
-		-- })
-
+		-- https://github.com/vuejs/language-tools/wiki/Neovim
 		local vue_language_server_path = vim.fn.stdpath("data")
 			.. "/mason/packages/vue-language-server/node_modules/@vue/language-server"
 		local tsserver_filetypes = { "typescript", "javascript", "javascriptreact", "typescriptreact", "vue" }
@@ -128,20 +102,9 @@ return {
 		}
 
 		local vue_ls_config = {}
-		-- nvim 0.11 or above
 		vim.lsp.config("vtsls", vtsls_config)
 		vim.lsp.config("vue_ls", vue_ls_config)
-		vim.lsp.enable({ "vtsls", "vue_ls" }) -- If using `ts_ls` replace `vtsls` to `ts_ls`
-
-		-- vim.lsp.enable("vtsls")
-		--
-		-- vim.lsp.config("vuels", {
-		-- 	capabilities = capabilities,
-		-- 	on_attach = on_attach,
-		-- 	filetypes = { "vue" },
-		-- })
-		--
-		-- vim.lsp.enable("vuels")
+		vim.lsp.enable({ "vtsls", "vue_ls" })
 
 		vim.lsp.config("emmet_ls", {
 			capabilities = capabilities,
@@ -159,7 +122,22 @@ return {
 				"handlebars",
 			},
 		})
-		vim.lsp.enable("emmet_ls")
+
+		vim.lsp.config("svelte", {
+			capabilities = capabilities,
+			on_attach = function(client, bufnr)
+				on_attach(client, bufnr)
+
+				vim.api.nvim_create_autocmd("BufWritePost", {
+					pattern = { "*.js", "*.ts" },
+					callback = function(ctx)
+						if client.name == "svelte" then
+							client.notify("$/onDidChangeTsOrJsFile", { uri = ctx.file })
+						end
+					end,
+				})
+			end,
+		})
 
 		vim.lsp.config("lua_ls", {
 			capabilities = capabilities,
@@ -180,7 +158,6 @@ return {
 				},
 			},
 		})
-		vim.lsp.enable("lua_ls")
 
 		vim.lsp.config("gopls", {
 			on_attach = on_attach,
@@ -198,6 +175,8 @@ return {
 				},
 			},
 		})
-		vim.lsp.enable("gopls")
+
+		local extra_servers = { "gopls", "lua_ls", "emmet_ls", "svelte" }
+		vim.lsp.enable(extra_servers)
 	end,
 }
